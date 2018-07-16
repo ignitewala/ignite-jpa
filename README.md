@@ -3,13 +3,16 @@ Spring boot to use Ignite as Hibernate L2 cache
 You need to create a MySQL schema 'football'
 
 
-create tables
+create table club
+------------------------
  create table club(
  clubno integer,
  cname varchar(200),
  constraint pk_club primary key (clubno)
 );
 
+Create table player
+--------------------------
 create table player(
  playerno integer,
  pname varchar(200),
@@ -20,7 +23,7 @@ create table player(
 );
 
 Insert few rows into 'club' table
-
+------------------------------------
 insert into club values(1, 'Manchester United');
 insert into club values(2, 'Real Madrid');
 insert into club values(3, 'Manchester City');
